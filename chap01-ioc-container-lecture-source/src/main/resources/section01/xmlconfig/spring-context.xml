@@ -11,7 +11,7 @@
             <value>pass01</value>
         </constructor-arg>
         <constructor-arg name="name">
-            <value>박태근쨔응</value>
+            <value>박태근</value>
         </constructor-arg>
     </bean>
 </beans>
