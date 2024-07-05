@@ -5,6 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.List;
+import java.util.Map;
 
 public class Application {
     public static void main(String[] args) {
@@ -12,13 +13,11 @@ public class Application {
 
         MemberService memberService = context.getBean("memberServiceField", MemberService.class);
 
-        List<MemberDTO> members = (List<MemberDTO>) memberService.selectMember();
+//        Map<Long, MemberDTO> members = memberService.selectMember();
 
-        for (MemberDTO memberDTO : members) {
-            System.out.println(memberDTO);
-        }
-
+//        for (Map.Entry<Long, MemberDTO> entry : members.entrySet()) {
+//            System.out.println("ID: " + entry.getKey() + ", Member: " + entry.getValue());
+//        }
         System.out.println(memberService.selectMember());
-
     }
 }
