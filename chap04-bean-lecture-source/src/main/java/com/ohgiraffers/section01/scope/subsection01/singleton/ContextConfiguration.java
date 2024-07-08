@@ -14,7 +14,7 @@ import java.time.LocalDate;
 public class ContextConfiguration {
 
     @Bean
-    public Product cartBread() {
+    public Product carpBread() {
         return new Bread("붕어빵", 1000, LocalDate.now());
     }
 

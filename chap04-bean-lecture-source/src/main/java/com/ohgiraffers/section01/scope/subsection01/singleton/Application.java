@@ -33,7 +33,7 @@ public class Application {
             System.out.println("beanName: " + beanName);
         }
 
-        Product cartBread = context.getBean("cartBread", Bread.class);
+        Product carpBread = context.getBean("carpBread", Bread.class);
         Product milk = context.getBean("milk", Beverage.class);
         Product water = context.getBean("water", Beverage.class);
 
@@ -41,7 +41,7 @@ public class Application {
         ShoppingCart cart1 = context.getBean("cart", ShoppingCart.class);
 
         // 빵과 우유를 담는다.
-        cart1.addItem(cartBread);
+        cart1.addItem(carpBread);
         cart1.addItem(milk);
 
         // 담긴 내용 확인
@@ -59,7 +59,5 @@ public class Application {
         System.out.println("cart1에 담긴 HashCode: " + cart1.hashCode());
         System.out.println("cart2에 담긴 HashCode: " + cart2.hashCode());
         // 빈의 기본 스코프는 싱글톤 스코프인 것을 확인할 수 있다.
-
-
     }
 }
